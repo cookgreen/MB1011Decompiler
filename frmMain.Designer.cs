@@ -29,6 +29,7 @@ namespace MBDecompiler
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnStartItemDecompiler = new System.Windows.Forms.Button();
             this.btnStartTrooperDecompiler = new System.Windows.Forms.Button();
             this.btnMBTextIDGenerator = new System.Windows.Forms.Button();
@@ -36,31 +37,38 @@ namespace MBDecompiler
             // 
             // btnStartItemDecompiler
             // 
+            this.btnStartItemDecompiler.Image = global::MBDecompiler.Properties.Resources.editor_item_icon;
+            this.btnStartItemDecompiler.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnStartItemDecompiler.Location = new System.Drawing.Point(26, 24);
             this.btnStartItemDecompiler.Name = "btnStartItemDecompiler";
             this.btnStartItemDecompiler.Size = new System.Drawing.Size(246, 196);
             this.btnStartItemDecompiler.TabIndex = 0;
             this.btnStartItemDecompiler.Text = "Item";
+            this.btnStartItemDecompiler.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnStartItemDecompiler.UseVisualStyleBackColor = true;
             this.btnStartItemDecompiler.Click += new System.EventHandler(this.btnStartItemDecompiler_Click);
             // 
             // btnStartTrooperDecompiler
             // 
+            this.btnStartTrooperDecompiler.Image = global::MBDecompiler.Properties.Resources.editor_trooper_icon;
             this.btnStartTrooperDecompiler.Location = new System.Drawing.Point(306, 24);
             this.btnStartTrooperDecompiler.Name = "btnStartTrooperDecompiler";
             this.btnStartTrooperDecompiler.Size = new System.Drawing.Size(246, 196);
             this.btnStartTrooperDecompiler.TabIndex = 1;
             this.btnStartTrooperDecompiler.Text = "Trooper";
+            this.btnStartTrooperDecompiler.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnStartTrooperDecompiler.UseVisualStyleBackColor = true;
             this.btnStartTrooperDecompiler.Click += new System.EventHandler(this.btnStartTrooperDecompiler_Click);
             // 
             // btnMBTextIDGenerator
             // 
-            this.btnMBTextIDGenerator.Location = new System.Drawing.Point(26, 256);
+            this.btnMBTextIDGenerator.Image = global::MBDecompiler.Properties.Resources.editor_id_generator_icon;
+            this.btnMBTextIDGenerator.Location = new System.Drawing.Point(26, 253);
             this.btnMBTextIDGenerator.Name = "btnMBTextIDGenerator";
-            this.btnMBTextIDGenerator.Size = new System.Drawing.Size(526, 112);
+            this.btnMBTextIDGenerator.Size = new System.Drawing.Size(526, 133);
             this.btnMBTextIDGenerator.TabIndex = 2;
             this.btnMBTextIDGenerator.Text = "ID Generator";
+            this.btnMBTextIDGenerator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMBTextIDGenerator.UseVisualStyleBackColor = true;
             this.btnMBTextIDGenerator.Click += new System.EventHandler(this.btnMBTextIDGenerator_Click);
             // 
@@ -73,6 +81,7 @@ namespace MBDecompiler
             this.Controls.Add(this.btnStartTrooperDecompiler);
             this.Controls.Add(this.btnStartItemDecompiler);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
