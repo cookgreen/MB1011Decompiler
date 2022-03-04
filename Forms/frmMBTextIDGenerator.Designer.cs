@@ -41,16 +41,16 @@ namespace MBDecompiler
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "M&B Text File:";
+            this.label1.Text = "MountBlade Text File:";
             // 
             // txtMBTextFile
             // 
-            this.txtMBTextFile.Location = new System.Drawing.Point(121, 10);
+            this.txtMBTextFile.Location = new System.Drawing.Point(186, 10);
             this.txtMBTextFile.Name = "txtMBTextFile";
             this.txtMBTextFile.ReadOnly = true;
-            this.txtMBTextFile.Size = new System.Drawing.Size(567, 27);
+            this.txtMBTextFile.Size = new System.Drawing.Size(502, 27);
             this.txtMBTextFile.TabIndex = 1;
             // 
             // btnBrowse
